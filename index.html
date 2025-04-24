@@ -1,119 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AI Engineer Portfolio of Parth Kalkar" />
+    <title>Parth Kalkar – AI Engineer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <header class="text-center py-10">
+      <h1 class="text-5xl font-bold">Parth Kalkar</h1>
+      <p class="text-indigo-400 text-xl mt-2">Full-Stack AI Engineer | LLMs | MLOps | Data Science</p>
+    </header>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shivam Kalkar | AI Engineer Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif']
-          }
-        }
-      }
-    };
-  </script>
-</head>
+    <section class="max-w-5xl mx-auto px-4 py-8">
+      <h2 class="text-3xl font-semibold mb-6 border-b border-gray-700 pb-2">About Me</h2>
+      <p class="text-lg leading-relaxed">
+        I'm a Full-Stack AI Engineer with 3+ years of experience in NLP, Computer Vision, and scalable ML systems. I specialize in LLMs, AI agents, and MLOps, and I've led impactful projects in fintech, chip design, and software dev automation. I'm passionate about using AI to automate workflows, drive innovation, and deliver responsible tech at scale.
+      </p>
+    </section>
 
-<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white font-sans">
-  <!-- NAVBAR -->
-  <header class="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-md">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-      <h1 class="text-xl font-bold">Shivam Kalkar</h1>
-      <nav class="space-x-4">
-        <a href="#about" class="hover:underline">About</a>
-        <a href="#projects" class="hover:underline">Projects</a>
-        <a href="#skills" class="hover:underline">Skills</a>
-        <a href="#contact" class="hover:underline">Contact</a>
-        <button id="themeToggle">🌓</button>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HERO SECTION -->
-  <section class="h-screen flex items-center justify-center text-center bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1603570419223-2182d6a94ad6')]">
-    <div class="bg-black/60 p-8 rounded-xl">
-      <h2 class="text-4xl md:text-6xl font-bold mb-4 text-white">AI Engineer | Tech Builder | ML Enthusiast</h2>
-      <p class="text-lg text-gray-200 mb-6">Designing intelligent systems to solve real-world problems</p>
-      <a href="#projects" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-xl hover:bg-indigo-500">View My Work</a>
-    </div>
-  </section>
-
-  <!-- ABOUT SECTION -->
-  <section id="about" class="py-20 px-4 max-w-5xl mx-auto">
-    <div class="flex flex-col md:flex-row items-center gap-8">
-      <img src="https://avatars.githubusercontent.com/u/000000?v=4" alt="Shivam" class="w-48 h-48 rounded-full shadow-lg">
-      <div>
-        <h3 class="text-3xl font-bold mb-4">About Me</h3>
-        <p class="text-lg">I'm Shivam Kalkar, an AI Engineer with experience in building intelligent systems for cybersecurity, document understanding, and electronics design. Currently pursuing an MBA at Stanford GSB and a Master's in Data Science at LMU Munich.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS SECTION -->
-  <section id="projects" class="py-20 px-4 max-w-6xl mx-auto">
-    <h3 class="text-3xl font-bold mb-10 text-center">Projects</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Example Project Card -->
-      <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
-        <img src="/assets/images/project-vpn.jpg" alt="VPN AI Project" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h4 class="text-xl font-semibold mb-2">AI-powered VPN Recommendation</h4>
-          <p class="text-gray-600 dark:text-gray-300 mb-3">Built a threat-aware VPN with ML-based server recommendation & LLM integration.</p>
-          <a href="#" class="text-indigo-600 hover:underline">View More</a>
+    <section class="max-w-5xl mx-auto px-4 py-8">
+      <h2 class="text-3xl font-semibold mb-6 border-b border-gray-700 pb-2">Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg project-card">
+          <img src="assets/images/celus.jpg" alt="CELUS AI Chatbot" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">AI Chatbot for Chip Design</h3>
+            <p class="text-gray-700 dark:text-gray-300 mt-2">Built a chatbot using LLMs to guide component selection and resolve design issues, boosting project completions by 76%.</p>
+            <a href="#" class="fancy-link text-indigo-500 mt-2 inline-block">Read More</a>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg project-card">
+          <img src="assets/images/claimer.jpg" alt="Tax Claims Automation" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">R&D Tax Claims Automation</h3>
+            <p class="text-gray-700 dark:text-gray-300 mt-2">Automated tax claims using fine-tuned LLMs, Neo4j graphs, and RAG. Saved £10M+ for UK firms and cut claim time in half.</p>
+            <a href="#" class="fancy-link text-indigo-500 mt-2 inline-block">View Case Study</a>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg project-card">
+          <img src="assets/images/llm-agent.jpg" alt="LLM Agent" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">LLM-Powered Coding Assistant</h3>
+            <p class="text-gray-700 dark:text-gray-300 mt-2">Used SmolAgents to guide coding with hints, test evaluations, and feedback. Plans to scale with ML-based training modules.</p>
+            <a href="#" class="fancy-link text-indigo-500 mt-2 inline-block">Try Demo</a>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg project-card">
+          <img src="assets/images/data-platform.jpg" alt="Automated Data Science Workflow" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Automated Data Science Platform</h3>
+            <p class="text-gray-700 dark:text-gray-300 mt-2">Built an agent-powered AI platform for automating data analysis, trends, and ML modeling. Enabled smarter decision making.</p>
+            <a href="#" class="fancy-link text-indigo-500 mt-2 inline-block">Live Preview</a>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg project-card">
+          <img src="assets/images/colorization.jpg" alt="GAN Image Colorization" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Image Colorization with GANs</h3>
+            <p class="text-gray-700 dark:text-gray-300 mt-2">Used GANs to colorize B&W images. Flask + React interface, trained on small datasets, with optimized pipelines for speed.</p>
+            <a href="#" class="fancy-link text-indigo-500 mt-2 inline-block">View Source</a>
+          </div>
         </div>
       </div>
-      <!-- Repeat similar cards for each project -->
-    </div>
-  </section>
+    </section>
 
-  <!-- SKILLS SECTION -->
-  <section id="skills" class="py-20 px-4 bg-gray-100 dark:bg-gray-800">
-    <div class="max-w-5xl mx-auto">
-      <h3 class="text-3xl font-bold mb-10 text-center">Skills</h3>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <div><p class="text-lg font-semibold">Python</p></div>
-        <div><p class="text-lg font-semibold">TensorFlow & PyTorch</p></div>
-        <div><p class="text-lg font-semibold">NLP & LLMs</p></div>
-        <div><p class="text-lg font-semibold">Computer Vision</p></div>
-        <div><p class="text-lg font-semibold">Streamlit</p></div>
-        <div><p class="text-lg font-semibold">Docker</p></div>
-        <div><p class="text-lg font-semibold">SQL / NoSQL</p></div>
-        <div><p class="text-lg font-semibold">Git / GitHub</p></div>
-      </div>
-    </div>
-  </section>
+    <section class="max-w-5xl mx-auto px-4 py-8">
+      <h2 class="text-3xl font-semibold mb-6 border-b border-gray-700 pb-2">Contact</h2>
+      <p>Email: <a href="mailto:parthkalkar111@gmail.com" class="fancy-link text-indigo-400">parthkalkar111@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/ParthKalkar" class="fancy-link text-indigo-400">@ParthKalkar</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/parthkalkar" class="fancy-link text-indigo-400">in/parthkalkar</a></p>
+    </section>
 
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="py-20 px-4 max-w-4xl mx-auto">
-    <h3 class="text-3xl font-bold mb-10 text-center">Contact Me</h3>
-    <div class="text-center">
-      <p class="mb-4">Feel free to reach out for collaborations or just a friendly chat!</p>
-      <p>Email: <a href="mailto:shivam@example.com" class="text-indigo-600 hover:underline">shivam@example.com</a></p>
-      <div class="mt-6 flex justify-center space-x-6">
-        <a href="https://github.com/shivamkalkar" class="hover:opacity-75">GitHub</a>
-        <a href="https://linkedin.com/in/shivamkalkar" class="hover:opacity-75">LinkedIn</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="text-center py-6 bg-gray-200 dark:bg-gray-900">
-    <p>&copy; 2025 Shivam Kalkar. All rights reserved.</p>
-  </footer>
-
-  <script>
-    // Theme toggle
-    const toggleBtn = document.getElementById('themeToggle');
-    toggleBtn.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-    });
-  </script>
-</body>
-
+    <footer class="text-center text-sm text-gray-400 py-6 border-t border-gray-800">
+      © 2025 Parth Kalkar. Built with 💡 and Tailwind CSS.
+    </footer>
+  </body>
 </html>
