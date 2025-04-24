@@ -1,0 +1,39 @@
+/* styles.css */
+
+/* Animations for project cards */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Fancy underline for links */
+a.fancy-link {
+  position: relative;
+  text-decoration: none;
+}
+a.fancy-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #6366f1;
+  bottom: -2px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+a.fancy-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Custom font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+body {
+  font-family: 'Fira Code', monospace;
+}
