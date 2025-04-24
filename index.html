@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AI Engineer Portfolio of Parth Kalkar">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI Engineer Portfolio of Parth Kalkar" />
   <title>Parth Kalkar – AI Engineer</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const navLinks = document.querySelectorAll("nav a[href^='#']");
@@ -18,36 +19,33 @@
           target.scrollIntoView({ behavior: "smooth" });
         });
       });
+      AOS.init({ once: true });
     });
   </script>
 </head>
-
-<body class="bg-gray-900 text-white font-sans">
-  <!-- Navigation -->
+<body class="bg-gray-900 text-white font-sans scroll-smooth">
   <nav class="fixed top-0 w-full bg-gray-800 shadow-md z-50">
     <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
       <h1 class="text-xl font-bold">Parth Kalkar</h1>
       <div class="space-x-4 text-sm">
-        <a href="#about" class="hover:text-indigo-400">About</a>
-        <a href="#projects" class="hover:text-indigo-400">Projects</a>
-        <a href="#experience" class="hover:text-indigo-400">Experience</a>
-        <a href="#interests" class="hover:text-indigo-400">Interests</a>
-        <a href="#contact" class="hover:text-indigo-400">Contact</a>
+        <a href="#about" class="hover:text-indigo-400 transition">About</a>
+        <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
+        <a href="#experience" class="hover:text-indigo-400 transition">Experience</a>
+        <a href="#interests" class="hover:text-indigo-400 transition">Interests</a>
+        <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="h-screen flex items-center justify-center text-center bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d')]">
+  <section class="h-screen flex items-center justify-center text-center bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d')]" data-aos="fade-zoom-in">
     <div class="bg-black/60 p-8 rounded-xl">
-      <h2 class="text-4xl md:text-6xl font-bold text-white mb-4">Hi, I'm Parth Kalkar</h2>
+      <h2 class="text-4xl md:text-6xl font-bold text-white mb-4 animate-pulse">Hi, I'm Parth Kalkar</h2>
       <p class="text-xl text-gray-300">AI Engineer | LLMs | MLOps | Full-Stack Innovator</p>
-      <a href="#projects" class="mt-6 inline-block px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-500">Explore My Work</a>
+      <a href="#projects" class="mt-6 inline-block px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-500 transition-all">Explore My Work</a>
     </div>
   </section>
 
-  <!-- About Me Section -->
-  <section id="about" class="max-w-5xl mx-auto px-4 py-20">
+  <section id="about" class="max-w-5xl mx-auto px-4 py-20" data-aos="fade-up">
     <h2 class="text-3xl font-semibold mb-6 border-b border-gray-700 pb-2">About Me</h2>
     <div class="grid md:grid-cols-2 gap-8 items-center">
       <div>
@@ -56,95 +54,89 @@
         </p>
       </div>
       <div>
-        <img src="assets/images/profile.jpg" alt="Profile Picture" class="rounded-xl shadow-lg w-full">
+        <img src="assets/images/profile.jpg" alt="Profile Picture" class="rounded-xl shadow-lg w-full hover:scale-105 transition-transform duration-300">
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="max-w-6xl mx-auto px-4 py-20">
+  <section id="projects" class="max-w-6xl mx-auto px-4 py-20" data-aos="fade-up">
     <h2 class="text-3xl font-semibold mb-6 border-b border-gray-700 pb-2">Projects</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+      <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transform hover:-translate-y-2 transition">
         <img src="assets/images/celus.jpg" class="w-full h-48 object-cover" alt="CELUS AI Chatbot">
         <div class="p-5">
           <h3 class="text-xl font-semibold">AI Chatbot for Chip Design</h3>
-          <p class="text-gray-600 dark:text-gray-300">Boosted CELUS design success rate by 76% using LLM-powered assistant for component recommendations and debugging support.</p>
+          <p class="text-gray-600 dark:text-gray-300">LLM-powered assistant for component recommendations and debugging support.</p>
         </div>
       </div>
-      <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+      <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transform hover:-translate-y-2 transition">
         <img src="assets/images/claimer.jpg" class="w-full h-48 object-cover" alt="Claimer Platform">
         <div class="p-5">
           <h3 class="text-xl font-semibold">R&D Tax Claim Automation</h3>
-          <p class="text-gray-600 dark:text-gray-300">Automated claim validation with graph RAG, boosting claim success by 42% for UK startups. Built LLM backend for compliance workflows.</p>
+          <p class="text-gray-600 dark:text-gray-300">Automated validation with graph RAG and fine-tuned LLMs for UK startups.</p>
         </div>
       </div>
-      <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+      <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transform hover:-translate-y-2 transition">
         <img src="assets/images/colorization.jpg" class="w-full h-48 object-cover" alt="GAN Image Colorization">
         <div class="p-5">
           <h3 class="text-xl font-semibold">GAN-Based Image Colorization</h3>
-          <p class="text-gray-600 dark:text-gray-300">Built end-to-end app with Flask + React to colorize grayscale images using a custom-trained GAN. Optimized for mobile responsiveness.</p>
+          <p class="text-gray-600 dark:text-gray-300">Full-stack GAN app with Flask + React to bring grayscale images to life.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="max-w-5xl mx-auto px-4 py-20">
+  <section id="experience" class="max-w-5xl mx-auto px-4 py-20" data-aos="fade-up">
     <h2 class="text-3xl font-semibold mb-6 border-b border-gray-700 pb-2">Work Experience</h2>
-    <div class="space-y-8">
-      <div>
+    <div class="space-y-10">
+      <div class="transition-transform transform hover:scale-105 bg-gray-800 p-6 rounded-xl shadow-md">
         <h3 class="text-xl font-bold">AI Engineer – CELUS GmbH</h3>
         <p class="text-sm text-gray-400">Mar 2024 – Present | Munich</p>
         <ul class="list-disc pl-5 mt-2 space-y-1">
-          <li>Built a generative assistant (CUBOt) for chip design workflows using Mistral 7B & LLaMA-2.</li>
-          <li>Improved design time by 71% and created RAG pipelines with LangChain + LangGraph.</li>
+          <li>Led development of CUBOt with Mistral 7B + LangGraph, reducing design time by 71%.</li>
+          <li>Collaborated with Siemens for co-pilot AI design assistance in chip production.</li>
         </ul>
       </div>
-      <div>
+      <div class="transition-transform transform hover:scale-105 bg-gray-800 p-6 rounded-xl shadow-md">
         <h3 class="text-xl font-bold">AI Engineer – Claimer</h3>
         <p class="text-sm text-gray-400">Nov 2021 – Oct 2023 | UK (Remote)</p>
         <ul class="list-disc pl-5 mt-2 space-y-1">
-          <li>Led AI SaaS development for R&D tax claims using Falcon and PaLM2 LLMs.</li>
-          <li>Orchestrated agents with Neo4j and LangChain, cutting manual validation by 60%.</li>
+          <li>Built scalable SaaS using Falcon LLM + LangChain for automated R&D compliance.</li>
+          <li>Reduced claim processing time from 4 weeks to 2 weeks with ML-driven orchestration.</li>
         </ul>
       </div>
-      <div>
+      <div class="transition-transform transform hover:scale-105 bg-gray-800 p-6 rounded-xl shadow-md">
         <h3 class="text-xl font-bold">ML Intern – Huawei</h3>
         <p class="text-sm text-gray-400">Sep 2019 – Feb 2021 | Moscow</p>
         <ul class="list-disc pl-5 mt-2 space-y-1">
-          <li>Built Transformer-based code correction tools; improved bug detection by 25%.</li>
-          <li>Containerized ML pipelines using Docker and deployed on Vertex AI.</li>
+          <li>Developed error detection algorithms using LSTMs and Transformers.</li>
+          <li>Improved debugging accuracy and developer productivity by 25%.</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- Interests Section -->
-  <section id="interests" class="max-w-5xl mx-auto px-4 py-20">
+  <section id="interests" class="max-w-5xl mx-auto px-4 py-20" data-aos="fade-up">
     <h2 class="text-3xl font-semibold mb-6 border-b border-gray-700 pb-2">Interests</h2>
     <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
-      <div class="bg-gray-800 p-4 rounded-xl shadow-md">🏓 Table Tennis</div>
-      <div class="bg-gray-800 p-4 rounded-xl shadow-md">♟️ Chess</div>
-      <div class="bg-gray-800 p-4 rounded-xl shadow-md">📚 Tech Blogging</div>
-      <div class="bg-gray-800 p-4 rounded-xl shadow-md">💻 Open-Source Contributions</div>
-      <div class="bg-gray-800 p-4 rounded-xl shadow-md">🏆 Hackathons</div>
-      <div class="bg-gray-800 p-4 rounded-xl shadow-md">🌐 Language Learning</div>
+      <div class="bg-gray-800 p-4 rounded-xl shadow-md hover:bg-indigo-600 transition">🏓 Table Tennis</div>
+      <div class="bg-gray-800 p-4 rounded-xl shadow-md hover:bg-indigo-600 transition">♟️ Chess</div>
+      <div class="bg-gray-800 p-4 rounded-xl shadow-md hover:bg-indigo-600 transition">📚 Tech Blogging</div>
+      <div class="bg-gray-800 p-4 rounded-xl shadow-md hover:bg-indigo-600 transition">💻 Open-Source Contributions</div>
+      <div class="bg-gray-800 p-4 rounded-xl shadow-md hover:bg-indigo-600 transition">🏆 Hackathons</div>
+      <div class="bg-gray-800 p-4 rounded-xl shadow-md hover:bg-indigo-600 transition">🌐 Language Learning</div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="max-w-4xl mx-auto px-4 py-20">
+  <section id="contact" class="max-w-4xl mx-auto px-4 py-20" data-aos="fade-up">
     <h2 class="text-3xl font-semibold mb-6 border-b border-gray-700 pb-2">Contact</h2>
     <p>Email: <a href="mailto:parthkalkar111@gmail.com" class="fancy-link text-indigo-400">parthkalkar111@gmail.com</a></p>
     <p>GitHub: <a href="https://github.com/ParthKalkar" class="fancy-link text-indigo-400">@ParthKalkar</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/parthkalkar" class="fancy-link text-indigo-400">in/parthkalkar</a></p>
   </section>
 
-  <!-- Footer -->
   <footer class="text-center text-sm text-gray-400 py-6 border-t border-gray-800">
-    © 2025 Parth Kalkar. Built with 💡 and Tailwind CSS.
+    © 2025 Parth Kalkar. Built with 💡 and Tailwind CSS + AOS.
   </footer>
 </body>
-
 </html>
